@@ -1,4 +1,4 @@
-
+// main: styles.scss
 
 
 
@@ -16,13 +16,16 @@ main {
     max-width: 100em;
     margin: 0 auto;
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    article.multiCol {
+      column-count: 2;
+      -webkit-column-count: 2; // Chrome, Safari, Opera
+      -moz-column-count: 2; // Firefox
+      column-rule: 1px solid $secondaryColor;
+      -webkit-column-rule: 1px solid $secondaryColor;
+      -moz-column-rule: 1px solid $secondaryColor;
+      column-gap: $gutter;
+      -webkit-column-gap: $gutter;
+      -moz-column-gap: $gutter;
+    }
+
 }

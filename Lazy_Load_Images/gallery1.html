@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Beit Pablo</title>
+
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+
+
+
+</head>
+<body>
+<!-- HEADER STARTS HERE -->
+	<header>
+		<figure class="logo">
+			<img src="images/logo.png"
+			srcset="images/logo1x.png 1x, images/logo2x.png 2x,
+			images/logo3x.png 3x">
+		</figure>
+    	<h1>Beit Pablo</h1>
+    	<h2>Uncovering the Past</h2>
+    </header>
+
+<!-- NAV STARTS HERE -->
+	<nav>
+   <ul class="clearfix">
+			<li class="active"><a href="index.html">Excavation</a></li>
+			<li><a href="#">History</a></li>
+			<li><a href="#">Visit</a></li>
+			<li><a href="#">Donate</a></li>
+		</ul>
+
+	</nav>
+
+
+<!-- MAIN STARTS HERE -->
+	<main>
+
+    <!-- One way to implement Lazy Loading without Responsive Images  -->
+    <!-- <h1>Gallery 1</h1>
+    <article class="llgallery">
+      <figure><img data-original="gallery/betSheanA_1200.jpg" data-sizes="100vw" alt="Photo"></figure>
+      <figure><img data-original="gallery/betSheanB_1200.jpg" sizes="100vw" alt="Photo"></figure>
+      <figure><img data-original="gallery/betSheanC_1200.jpg" sizes="100vw" alt="Photo"></figure>
+      <figure><img data-original="gallery/caesareaA_1200.jpg" sizes="100vw" alt="Photo"></figure>
+      <figure><img data-original="gallery/caesareaB_1200.jpg" sizes="100vw" alt="Photo"></figure>
+      <figure><img data-original="gallery/jaffa_1200.jpg" sizes="100vw" alt="Photo"></figure>
+      <figure><img data-original="gallery/masada_1200.jpg" sizes="100vw" alt="Photo"></figure>
+      <figure><img data-original="gallery/mosk_1200.jpg" sizes="100vw" alt="Photo"></figure>
+      <figure><img data-original="gallery/rideCamel_1200.jpg" sizes="100vw" alt="Photo"></figure>
+      <figure><img data-original="gallery/sermon_1200.jpg" sizes="100vw" alt="Photo"></figure>
+      <figure><img data-original="gallery/tiberius_1200.jpg" sizes="100vw" alt="Photo"></figure>
+    </article> -->
+
+    <!-- One way to implement Lazy Loading with Responsive Images -->
+    <h1>Gallery 1</h1>
+    <article class="llgallery">
+      <figure>
+        <picture>
+          <source media="(min-width: 35rem)" data-original-set="gallery/betSheanA_1200.jpg">
+            <img data-original="gallery/betSheanA_560.jpg" alt="Photo">
+        </picture>
+      </figure>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 35rem)" data-original-set="gallery/betSheanB_1200.jpg">
+            <img data-original="gallery/betSheanB_560.jpg" alt="Photo">
+        </picture>
+      </figure>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 35rem)" data-original-set="gallery/betSheanC_1200.jpg">
+            <img data-original="gallery/betSheanC_560.jpg" alt="Photo">
+        </picture>
+      </figure>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 35rem)" data-original-set="gallery/caesareaA_1200.jpg">
+            <img data-original="gallery/caesareaA_560.jpg" alt="Photo">
+        </picture>
+      </figure>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 35rem)" data-original-set="gallery/caesareaB_1200.jpg">
+            <img data-original="gallery/caesareaB_560.jpg" alt="Photo">
+        </picture>
+      </figure>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 35rem)" data-original-set="gallery/jaffa_1200.jpg">
+            <img data-original="gallery/jaffa_560.jpg" alt="Photo">
+        </picture>
+      </figure>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 35rem)" data-original-set="gallery/masada_1200.jpg">
+            <img data-original="gallery/masada_560.jpg" alt="Photo">
+        </picture>
+      </figure>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 35rem)" data-original-set="gallery/mosk_1200.jpg">
+            <img data-original="gallery/mosk_560.jpg" alt="Photo">
+        </picture>
+      </figure>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 35rem)" data-original-set="gallery/rideCamel_1200.jpg">
+            <img data-original="gallery/rideCamel_560.jpg" alt="Photo">
+        </picture>
+      </figure>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 35rem)" data-original-set="gallery/sermon_1200.jpg">
+            <img data-original="gallery/sermon_560.jpg" alt="Photo">
+        </picture>
+      </figure>
+
+      <figure>
+        <picture>
+          <source media="(min-width: 35rem)" data-original-set="gallery/tiberius_1200.jpg">
+            <img data-original="gallery/tiberius_560.jpg" alt="Photo">
+        </picture>
+      </figure>
+    </article>
+
+  </main>
+
+<!-- FOOTER STARTS HERE -->
+    <footer>
+    <p>HTML5 Responsive Design</p>
+    </footer>
+
+<script>
+window.lazyLoadOptions = {
+  // Your lazyload options
+  threshold: 0
+};
+</script>
+
+<!-- Download the script and execute it after lazyLoadOptions is defined -->
+<script async src="js/lazyload.min.js"></script>
+</body>
+</html>

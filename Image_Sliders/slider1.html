@@ -10,11 +10,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- STYLE SHEETS -->
-<link href="css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="slick/slick.css">
+<link rel="stylesheet" href="slick/slick-theme.css">
+<link href="css/styles.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
 
 
-     
+
 </head>
 <body>
 <!-- HEADER STARTS HERE -->
@@ -26,8 +28,8 @@
 		</figure>
     	<h1>Beit Pablo</h1>
     	<h2>Uncovering the Past</h2>
-    </header>
-    
+  </header>
+
 <!-- NAV STARTS HERE -->
 	<nav>
    <ul class="clearfix">
@@ -36,25 +38,79 @@
 			<li><a href="#">Visit</a></li>
 			<li><a href="#">Donate</a></li>
 		</ul>
-   
+
 	</nav>
-    
-    
+
+
 <!-- MAIN STARTS HERE -->
 	<main>
-	
 
 
+    <!-- Slider/Carousel with non-responsive images -->
+    <!-- <div class="myslider">
+      <div><img src="sliders/slider01h.jpg" alt="Slider Image"></div>
+      <div><img src="sliders/slider02h.jpg" alt="Slider Image"></div>
+      <div><img src="sliders/slider03h.jpg" alt="Slider Image"></div>
+      <div><img src="sliders/slider04h.jpg" alt="Slider Image"></div>
+      <div><img src="sliders/slider05h.jpg" alt="Slider Image"></div>
+    </div> -->
+    <!-- End of Slider/Carousel -->
+
+    <!-- Slider/Carousel with responsive images -->
+    <div class="myslider">
+      <picture>
+        <source srcset="sliders/slider01h.jpg" media="(min-width: 29.25rem)">
+        <img srcset="sliders/slider01s.jpg" alt="Slider Image">
+      </picture>
+
+      <picture>
+        <source srcset="sliders/slider02h.jpg" media="(min-width: 29.25rem)">
+        <img srcset="sliders/slider02s.jpg" alt="Slider Image">
+      </picture>
+
+      <picture>
+        <source srcset="sliders/slider03h.jpg" media="(min-width: 29.25rem)">
+        <img srcset="sliders/slider03s.jpg" alt="Slider Image">
+      </picture>
+
+      <picture>
+        <source srcset="sliders/slider04h.jpg" media="(min-width: 29.25rem)">
+        <img srcset="sliders/slider04s.jpg" alt="Slider Image">
+      </picture>
+
+      <picture>
+        <source srcset="sliders/slider05h.jpg" media="(min-width: 29.25rem)">
+        <img srcset="sliders/slider05s.jpg" alt="Slider Image">
+      </picture>
+    </div>
+    <!-- End of Slider/Carousel -->
 
 
     <p>Natoque lacus, platea tortor amet etiam nunc a lectus tempor, ac. Elementum sit aenean, magnis natoque! Lundium placerat et lorem nisi cras. Sit augue sit. Arcu sit turpis porttitor? Augue phasellus magnis, cras nunc lectus? Amet adipiscing dis in, facilisis placerat dignissim arcu elementum phasellus purus nunc velit nascetur! A a aliquet ut pulvinar! Pulvinar rhoncus augue enim sagittis, quis purus! Risus ut rhoncus enim ridiculus arcu! Scelerisque montes, aliquam tincidunt. Etiam amet et. Dapibus enim porta, velit ut. Ridiculus risus, cursus ultrices, a phasellus? Natoque, pulvinar ut massa, elementum nec, sagittis nec tristique porta augue, tincidunt aliquam, dictumst? Cum, ut sociis sociis tincidunt, in tincidunt tempor, nisi integer dignissim, hac, mattis sociis, a a ac in eu auctor.</p>
-    </main>
-    
-<!-- FOOTER STARTS HERE -->  
+  </main>
+
+<!-- FOOTER STARTS HERE -->
     <footer>
-    <p>HTML5 Responsive Design Start File by Paul Cheney</p>
+      <p>HTML5 Responsive Design</p>
     </footer>
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.myslider').slick({
+          autoplay: true,
+          dots: true,
+          cssEase: 'ease-out',
+          speed: 4000,
+          autoplaySpeed: 2000,
+          pauseOnHover: false,
+          pauseOnFocus: false,
+
+          // arrows: true,
+        });
+      });
+    </script>
 
 </body>
 </html>

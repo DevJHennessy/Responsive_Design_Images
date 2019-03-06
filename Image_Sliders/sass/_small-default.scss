@@ -1,3 +1,4 @@
+// main: styles.scss
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
@@ -15,7 +16,7 @@ body {
 /* ------------- HEADER ------------- */
 header {
 	position: relative;
-	height: 110px; 
+	height: 110px;
 	background-image: url(../images/header0560.jpg);
 	figure.logo {
 		position:absolute;
@@ -46,7 +47,7 @@ nav {
 		padding: .5rem 0;
 		color:$primaryColor;
 		text-decoration: none;
-		
+
 	} // end anchors
 	ul li.active a {
 		background-color: darken( $secondaryColor, 10% );
@@ -62,30 +63,32 @@ nav {
 /*  ------------- MAIN -------------  */
 
 main {
-	max-width: 960px;
+	// max-width: 960px;
 	h1 {
 		font-size: 2rem;
 		margin: 1rem 0 0 $gutter;
 		color: $primaryColor;
 	} // end h1
-	
-	
+
+
 	p {
 		line-height: 130%;
 		margin: .25rem $gutter 0 $gutter;
 	} // end p
-	
-    
-    
+
+
+
 } // end main
 
 
 
-
-
-
-
-
+/*  ------------- Slick Slider/Carousel -------------  */
+div.myslider div {
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
 
 
 

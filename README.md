@@ -1,6 +1,6 @@
 <h1>Responsive Web Design: Images and Sliders</h1>
 
-<p>In this repository there are several examples of how to use responsive images on websites. These are from the <a href="https://www.pluralsight.com/courses/responsive-web-design-images-sliders">PluralSight Course: Hands-on Responsive Web Design 2: Responsive Images and Sliders</a>. For each page, you can play around with expanding and shrinking the screen size to watch the responsiveness between small, medium, and large screen sizes and see how the images change.</p>
+<p>In this repository there are several examples of how to use responsive images on websites. These are from the PluralSight Course: <a href="https://www.pluralsight.com/courses/responsive-web-design-images-sliders">Hands-on Responsive Web Design 2: Responsive Images and Sliders</a>. For each page, you can play around with expanding and shrinking the screen size to watch the responsiveness between small, medium, and large screen sizes and see how the images change.</p>
 
 <p><strong>Note:</strong> The best way to view these examples is to either clone the repository or download the files and open the files on your local machine. The GitHub Previewer is not fully functioning and you may come across a few errors. Also, to better view the changes in the images, FireFox is the best browser because it will rapidly switch between different-sized images, where Chrome will take the largest image and only display that image until you empty your cache and do a hard reload.</p>
 
